@@ -6,7 +6,7 @@ int main() {
 
 	// Switch which problem you want to run from week 1 assignment //
 
-	int problem = 1;
+	int problem = 2;
 
 	switch (problem) {
 
@@ -24,6 +24,11 @@ int main() {
 			std::cout << a << std::endl;
 		}
 		
+	}
+
+	case 2:
+	{
+		main_with_large_stack_space();
 	}
 
 	}
