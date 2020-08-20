@@ -6,7 +6,7 @@ int main() {
 
 	// Switch which problem you want to run from week 1 assignment //
 
-	int problem = 2;
+	int problem = 4;
 
 	switch (problem) {
 
@@ -31,5 +31,21 @@ int main() {
 		main_with_large_stack_space();
 	}
 
+	case 3:
+	{
+		int size;
+		std::cin >> size;
+		std::vector <Request> requests = ReadRequests();
+
+		Buffer buffer(size);
+		std::vector <Response> responses = ProcessRequests(requests, &buffer);
+
+		PrintResponses(responses);
+	}
+
+	case 4:
+	{
+		stackMax();
+	}
 	}
 }
