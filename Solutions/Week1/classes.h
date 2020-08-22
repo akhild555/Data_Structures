@@ -2,8 +2,8 @@
 #include <queue>
 #include <vector>
 #include <cassert>
-#include <limits>
 
+// Problem 1.3
 
 struct Request {
     Request(int arrival_time, int process_time) :
@@ -46,6 +46,9 @@ private:
     std::queue <int> finish_time_;
 };
     
+
+// Problem 1.4
+
 class StackWithMax {
     std::vector<int> stack;
     std::vector<int> aux_stack;

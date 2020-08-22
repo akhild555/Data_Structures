@@ -6,7 +6,7 @@ int main() {
 
 	// Switch which problem you want to run from week 1 assignment //
 
-	int problem = 4;
+	int problem = 5;
 
 	switch (problem) {
 
@@ -46,6 +46,23 @@ int main() {
 	case 4:
 	{
 		stackMax();
+	}
+	
+	case 5:
+	{
+		int n = 0;
+		std::cin >> n;
+
+		std::vector<int> A(n);
+		for (size_t i = 0; i < n; ++i)
+			std::cin >> A.at(i);
+
+		int w = 0;
+		std::cin >> w;
+
+		max_sliding_window_fast(A, w);
+
+		return 0;
 	}
 	}
 }

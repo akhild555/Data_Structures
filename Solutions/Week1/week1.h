@@ -18,3 +18,7 @@ std::vector <Response> ProcessRequests(const std::vector <Request>& requests, Bu
 void PrintResponses(const std::vector <Response>& responses);
 
 void stackMax();
+
+void max_sliding_window_naive(std::vector<int> const& A, int w);
+
+void max_sliding_window_fast(std::vector<int> const& A, int w);
